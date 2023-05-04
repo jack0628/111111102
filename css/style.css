@@ -1,10 +1,83 @@
-img{
-    width: 400px;
-    height: 300px;
-  }
-  body{
-    background-color: rgb(247, 215, 220);
-  }
-  H1{
-    color: rgb(4, 83, 151);
-  }
+@charset "utf-8";
+
+/*視窗背景色設定*/
+body
+{
+   background-color: rgb(248, 209, 137)
+}
+
+/*連結顏色設定*/
+
+
+/*頁首,導覽,頁尾的共通設定*/
+header,nav,footer{
+    text-align: center;
+}
+
+/*導覽樣式設定*/
+
+
+/*頁面標題設定*/
+h1
+{
+    width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 5px solid #91e9c3;
+    border-radius: 50%;
+    background-color: #6fbb9a;
+    color: #fff;
+    font-size: 300%;
+    text-align: center;
+    line-height: 1;
+    background-image: linear-gradient(to bottom,#6fbb9a,#4a9d79);
+    font-family: 'Rubik Bubbles',cursive;
+
+}
+
+/*次標題設定*/
+.h{
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted #94c8b1;
+    border-left: 10px solid #4175e6;
+    color: #3fa177;
+    font-family: 'Darumadrop One',cursive;
+}
+
+/*小標題設定*/
+.h-sub span{
+    text-align: center;
+}
+
+/*內容區塊邊框設定*/
+
+#contents {
+    margin: 40px;
+    padding: 40px 80px;
+    border: 1px solid #ff5601;
+    background-color: #fff;
+}
+
+/*「更多介紹」連結設定*/
+.more{
+    text-align:right;
+}
+
+/*連結圖示設定*/
+
+
+/*區塊間分隔*/
+#contents > section + section{
+    margin-top: 80px;
+}
+
+/*文繞圖設定*/
+
+
+/*圓形圖片設定*/
+.photo{
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgb(0 0 0 / 50%);
+}
+
