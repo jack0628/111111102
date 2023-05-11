@@ -3,11 +3,20 @@
 /*視窗背景色設定*/
 body
 {
-   background-color: rgb(248, 209, 137)
+   background-color: rgb(248, 209, 137);
+   background-image: url(../img/bg.jpg);
+   background-repeat: repeat-x;
 }
 
 /*連結顏色設定*/
-
+a{
+    color:#df4839;
+    text-decoration: none;
+}
+a:hover{
+    color:#ff705b;
+    background-color: #f6bb9e;
+}
 
 /*頁首,導覽,頁尾的共通設定*/
 header,nav,footer{
@@ -15,11 +24,26 @@ header,nav,footer{
 }
 
 /*導覽樣式設定*/
-
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+    width: 180px;
+    margin: 0 10px;
+}
+.menu a{
+    display: block;
+    padding: 10px;
+    background: #6fbb9a;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu a:hover {
+    background: #90ddbb;
+}
 
 /*頁面標題設定*/
-h1
-{
+h1{
     width: 300px;
     margin: 40px auto;
     padding: 30px;
@@ -27,13 +51,22 @@ h1
     border-radius: 50%;
     background-color: #6fbb9a;
     color: #fff;
-    font-size: 300%;
+    font-size: 350%;
     text-align: center;
     line-height: 1;
     background-image: linear-gradient(to bottom,#6fbb9a,#4a9d79);
     font-family: 'Rubik Bubbles',cursive;
-
+    transition: background-color ease 5s;
+    transition: color ease-in 5s;
+    text-shadow:  1px 1px 2px #307657;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-image: linear-gradient(to bottom, #6fbb9a, #4a9d79);
 }
+h1:hover{
+    color:#83ff89;
+    background-color: #5b310a;
+}
+
 
 /*次標題設定*/
 .h{
@@ -62,6 +95,11 @@ h1
 /*「更多介紹」連結設定*/
 .more{
     text-align:right;
+}
+.more::after{
+    content:url(../img/ico_arrow.png);
+    margin-left:3px;
+    vertical-align: middle;
 }
 
 /*連結圖示設定*/
