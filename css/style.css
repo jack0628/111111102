@@ -84,11 +84,11 @@ h1:hover{
 }
 
 /*內容區塊邊框設定*/
-
-#contents {
-    margin: 40px;
+#contents{
+    width: 960px;
+    margin: 40px auto;
     padding: 40px 80px;
-    border: 1px solid #ff5601;
+    border: 1px solid #f6bb9e;
     background-color: #fff;
 }
 
@@ -111,8 +111,22 @@ h1:hover{
 }
 
 /*文繞圖設定*/
-
-
+.imgl{
+    float: left;
+    margin-right: 20px;
+}
+.imgr{
+    float: right;
+    margin-left: 20px;
+}
+.clear{
+    clear: both;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
 /*圓形圖片設定*/
 .photo{
     border-radius: 50%;
